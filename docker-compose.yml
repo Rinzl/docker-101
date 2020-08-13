@@ -1,0 +1,10 @@
+version: '3'
+services: 
+    docker-hello:
+        build: .
+        command: keep
+        tty: true
+    redis:
+        image: redis
+        volumes: 
+            - /mnt/c/Users/tranh/Desktop/Docker/Docker-101/data:/data
